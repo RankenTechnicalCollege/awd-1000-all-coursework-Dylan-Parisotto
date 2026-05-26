@@ -1,0 +1,98 @@
+/* Name: Dylan Parisotto
+   File Name: styles.css
+   Date: 5/26/2026
+*/
+
+/*CSS Reset*/
+* body, header, nav, main, footer, img, h1, h3{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*style rule for body and image*/
+body {
+  background-color: #e3eaf8;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*style rule for header content*/
+h1 {
+  text-align: center;
+  font-size: 3em;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  padding: 3%;
+  color: #101a2d;
+}
+
+/*style rules for navigation area */
+nav {
+  background-color: #1d396d;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  font-size: 1.5em;
+  font-family:Verdana, Arial, sans-serif;
+  font-weight: bold;
+}
+nav li a {
+  display: block;
+  color: #e3eaf8;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-decoration: none;
+}
+
+/*style rules for main content */
+main {
+  padding: 2%;
+  font-family: Geneva, Arial, sans-serif;
+  overflow: auto;
+}
+main p { 
+  font-size: 1.25em;
+}
+main h3 {
+  padding-top: 2%;
+  font-size: 2em;
+}
+.image{
+  width: 45%;
+  float: left;
+  padding: 1%;
+}
+.group {
+  width: 45%;
+  float: right;
+  padding: 1%;
+}
+.external {
+  color: #1d396d;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/*style rules for footer content*/
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  background-color: #1d396d;
+  color: #e3eaf8;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 0%;
+  padding-right: 0%;
+  text-decoration: none;
+}
+  
