@@ -57,10 +57,42 @@ main a {
     padding-top: 5%;
 }
 
-/* Orange */
+/* Orange */ 
+.orange-hex {
+    background-color: #ff9900;
+}
+.orange-rgb {
+    background-color: rgb(255, 153, 0);
+}
+.orange-hsl {
+    background-color: hsl(36, 100%, 50%);
+}
 
 
 /* Purple */
 
+.purple-hex {
+    background-color: #cc00cc;
+}
+.purple-rgb {
+    background-color: rgb(204, 0, 204);
+}
+.purple-hsl {
+    background-color: hsl(300, 100%, 40%);
+}
 
 /* Green */
+.green-hex {
+    background-color: #339933;
+}
+.green-rgb {
+    background-color: rgb(51, 153, 51);
+}
+.green-hsl {
+    background-color: hsl(120, 50%, 40%);
+}
+
+
+footer {
+    background-color: #add8e6;
+}
