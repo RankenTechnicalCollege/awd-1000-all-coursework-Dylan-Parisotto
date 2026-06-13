@@ -33,3 +33,43 @@ nav a{
   color:black;
   text-shadow: 0px 0px 4px white;
 }
+
+#about {
+  padding: 20px;
+}
+
+#menu-preview .menu-item {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 12px 0;
+  background-color: #fff;
+}
+
+#menu-preview p span {
+  color: #b22f1a;
+  font-weight: bold;
+}
+
+#location iframe {
+  width: 320px;
+  height: 320px;
+  float: left;
+  margin-right: 20px;
+  border: 0;
+}
+
+footer {
+  background-color: #0A2342;
+  color: white;
+  text-align: center;
+  padding: 16px 0;
+  clear: both;
+}
+
+footer p {
+  margin: 0;
+}
+
+.clear {
+  clear: both;
+}
