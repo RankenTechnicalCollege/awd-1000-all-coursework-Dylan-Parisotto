@@ -1,0 +1,40 @@
+/*
+Author: Dylan Parisotto
+Date: 6/17/2026
+File Name: styles.css
+*/
+
+/*CSS Reset*/
+body, header, nav, main, footer, img, h1 {
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+/*Style rule for header content*/
+img{
+  max-width:100%;
+  display:block;
+}
+
+/*style rules for header content*/
+header{
+  text-align:center;
+  font-size:3em;
+  color:#373684;
+}
+
+header h1 {
+  font-style: italic;
+}
+
+/*Style rules for navigation area */
+nav{
+  background-color:#373684;
+}
+
+nav ul{
+  list-style-type:none;
+  margin:0;
+  text-align:center;
+}
