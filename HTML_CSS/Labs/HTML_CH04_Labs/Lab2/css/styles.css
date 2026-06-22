@@ -89,3 +89,8 @@ footer {
   padding:horizontal 0% vertical 1%;
 }
 
+footer a {
+  color:#f3e6d8;
+  text-decoration:none;
+}
+
