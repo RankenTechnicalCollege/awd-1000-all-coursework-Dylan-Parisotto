@@ -1,7 +1,7 @@
 /* 
 Style sheet created by: 
-Student's Name 
-Today's Date 
+Dylan Parisotto 
+6/23/2026
 */
 body {
     background-color: #dde3fd;
@@ -22,12 +22,28 @@ body {
 }
 
 /* sticky */
-
+.box.sticky {
+    position:sticky;
+    top:0;
+}
 
 /* relative */
-
+.box.relative {
+    position:relative;
+    top:90px;
+    left:30px;
+}
 
 /* fixed */
-
+.box.fixed {
+    position:fixed;
+    top:90px;
+    right:10px
+}
 
 /* absolute */
+.box.absolute {
+    position:absolute;
+    bottom:0;
+    right:0
+}
