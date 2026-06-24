@@ -21,6 +21,13 @@ img {
     display: block;
 }
 
+/*style rules for mobile viewpoint*/
+
+/*rule to hide tablet-desktop class*/
+.tablet-desktop {
+    display: none;
+}
+
 /* Style rules for header content */
 header h1 {
     text-align: center;
@@ -38,6 +45,7 @@ nav {
 
 nav ul {
     text-align: center;
+    text-decoration:none;
 }
 
 nav li {
@@ -45,6 +53,7 @@ nav li {
     font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
     padding: 3%;
+    display:inline-block;
 }
 
 nav li a {
@@ -58,6 +67,26 @@ main {
     padding: 2%;
     background-color: #ebf7e3;
     font-family: 'PT Sans', sans-serif;
+}
+
+.btn {
+    background-color: #375f1b;
+    padding: 2%;
+    margin: 2% auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn a {
+    color:#ebfef3;
+    text-decoration:none;
+    font-size:1.25em;
+    display:block;
+}
+
+.corner {
+    border-radius:12px;
 }
 
 main p {
