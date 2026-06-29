@@ -5,7 +5,7 @@ File Name: style.css
 */
 
 /*CSS Reset*/
-body, header, nav, main, footer, img, h1, h3 {
+body, header, nav, main, footer, img, h1, h3, ul {
   margin:0;
   padding:0;
   border:0;
@@ -62,7 +62,7 @@ nav li a {
 /*style rules for main content*/
 main {
   padding:2%;
-  font-family:Verdana,Arial, Helvetica, sans-serif;
+  font-family:Lora,Verdana, Arial, Helvetica, sans-serif;
 }
 
 main p {
@@ -90,8 +90,34 @@ main ul {
   text-align:center;
 }
 
+.round {
+  border-radius:6px
+}
+
+#info ul {
+  margin:left 10%;
+}
+
 #contact {
   text-align:center;
+}
+
+.tel-link {
+  background-color:#2a1f14;
+}
+
+.tel-link a {
+  color:#f6eee4;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.mobile h1 {
+  font-family:"Emblema One",Arial,sans-serif;
+}
+
+.mobile h3 {
+  font-family:Lora,Arial,sans-serif;
 }
 
 /*style rules for footer content*/
@@ -106,4 +132,3 @@ footer a {
   color:#f3e6d8;
   text-decoration:none;
 }
-
