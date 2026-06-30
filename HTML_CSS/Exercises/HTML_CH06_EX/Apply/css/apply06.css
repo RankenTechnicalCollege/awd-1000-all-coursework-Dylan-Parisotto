@@ -1,7 +1,7 @@
 /*
-Author:
-Date:
-File Name: 
+Author: Dylan Parisotto
+Date: 6/30/2026
+File Name: apply06.css
 */
 
 /* CSS Reset */
@@ -45,3 +45,24 @@ footer {
 	text-align: center;
     color: #341509;
 }
+
+/*media query for tablet viewport*/
+@media screen, print and (min-width: 481px) {
+    article {
+        width:43%;
+        float:left;
+        height:160px;
+    }
+
+    footer {
+        float:left
+    }
+}
+
+/*media query for desktop viewport*/
+@media screen and (min-width: 900px) {
+    article{
+
+    }
+}
+
