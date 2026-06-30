@@ -78,10 +78,14 @@ footer a {
 }
 
 
-  #tab-desktop {
-    display: none;
-  }
+#tab-desktop {
+  display: none;
+}
 
-  header {
-    font-size: 1.6em;
-  }
+header {
+  font-size: 1.6em;
+}
+
+#contact {
+  text-align:center;
+}
