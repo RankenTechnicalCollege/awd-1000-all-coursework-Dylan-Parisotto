@@ -77,9 +77,13 @@ footer {
 }
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 481px), print {
+@media screen and (min-width: 488px), print {
     
     /* Tablet Viewport: Style rules for nav area */
+    .tablet-desktop {
+        display:block;
+    }
+
     nav li {
         display: inline-block;
         margin: 0.5%;
@@ -88,7 +92,8 @@ footer {
     nav li a {
         padding: 0.1em 1em;
     }
-    
+
+
 }
 
 /* Media Query for Desktop Viewport */
