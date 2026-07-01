@@ -13,7 +13,7 @@ body, header, nav, main, footer, h1, div, article, h2 {
 
 /* Style rules for body */
 body {
-	background-color: #fe9972;
+	background: linear-gradient(to left, #fe9972, #ffe5dc);
 }
 
 /* Style rules for mobile viewport */
@@ -62,7 +62,13 @@ footer {
 /*media query for desktop viewport*/
 @media screen and (min-width: 900px) {
     article{
+        width:27%;
+        height:140px;
+    }
 
+    article:hover {
+        background-color:#ffe5dc;
+        color:#a22c02;
     }
 }
 
