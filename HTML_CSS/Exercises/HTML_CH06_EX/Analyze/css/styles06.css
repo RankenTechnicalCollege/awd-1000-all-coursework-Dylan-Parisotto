@@ -100,6 +100,11 @@ footer {
 @media screen and (min-width: 769px), print {
  
     /* Desktop Viewport: Style rules for nav */
+
+    nav ul {
+        text-align:right;
+    }
+
     nav li {
         border-radius: 0;
     }
@@ -109,6 +114,11 @@ footer {
         padding: 0.7em;
     }
 
+    nav li a:hover {
+        color:#4424d6;
+        background-color:#e5e0fa;
+    }
+
     /* Desktop Viewport: Style rules for the main content */
     main {
         border-style: none;
@@ -116,9 +126,23 @@ footer {
         overflow: auto;
     }
 
+    .col-content {
+        width:30%;
+        float:left;
+        padding:1.5%;
+    }
+
     /* Desktop Viewport: Style rule for footer */
     footer {
         clear: left;
     }
 
+}
+
+/*media query for large desktop viewport*/
+@media screen and (min-width:1441px), print {
+    #container {
+        width:1440px;
+        margin: 0 auto;
+    }
 }
