@@ -137,6 +137,84 @@ footer a {
   text-decoration:none;
 }
 
-@media screen and (min-width:550px) {
-  
+@media screen and (min-width:550px), print {
+  /*tablet viewport: show tab-desk class, hide mobile class*/
+  .tab-desk {
+    display:block;
+  }
+
+  .mobile {
+    display:none;
+  }
+
+  /*tablet viewport:style rule for header content*/
+  span.tab-desk {
+    display:inline;
+  }
+
+  /*tablet viewport: style rules for nav area*/
+  nav li {
+    border-top:none;
+    display:inline-block;
+    font-size:1.5em;
+    border-right: 1px solid #e5e9fc;
+  }
+
+  nav li:last-child {
+    border-right:none;
+  }
+
+  nav li a {
+    padding: 0.25em 0.5em;
+  }
+
+  /*tablet viewport:style rule for map*/
+  .map {
+    width:500px;
+    height:450px;
+  }
+}
+
+/*media query for desktop viewport*/
+@media screen and (min-width:769px), print {
+  /*desktop viewport:style rule for header*/
+  header {
+    padding:2%;
+  }
+
+  /*desktop viewport: style rules for nav area*/
+  nav li a {
+    padding:0.5em 1.5em;
+  }
+
+  nav li a:hover {
+    color:#373684;
+    background-color:#e5e9fc
+  }
+
+  /*desktop viewport: style rules for main content*/
+  #info ul {
+    margin-left:5%
+  }
+
+  main h3 {
+    font-size:1.5em;
+  }
+
+  #piano, #guitar, #violin {
+    width:28%;
+    float:left;
+    margin:0 2%;
+
+  }
+
+
+}
+
+/*media query for print*/
+@media print {
+  body {
+    background-color:#fff;
+    color:#000;
+  }
 }
