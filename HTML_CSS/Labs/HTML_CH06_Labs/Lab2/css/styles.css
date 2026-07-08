@@ -140,7 +140,66 @@ footer a {
     display:block;
   }
 
-  
+  .mobile {
+    display:none;
+  }
 
   /*tablet viewport: style rules for nav area*/
+  nav li {
+    display:inline-block;
+    font-size:1.25em;
+  }
+  nav li a {
+    padding:0.5em;
+  }
+
+
 } 
+
+/*media query for desktop viewport*/
+@media screen and (min-width:1000px), print {
+  nav li {
+    font-size:1.5em;
+  }
+
+  nav li a {
+    padding: 0.5em 1.5em;
+  }
+
+  nav li a:hover {
+    color:#2a1f14;
+    background-color: #f6eee4;
+  }
+
+  /*desktop viewport: style rules for main content*/
+  #info ul {
+    margin-left: 5%;
+  }
+
+}
+
+/*media query for large desktop viewports*/
+@media screen and (min-width:1921px) {
+  body {
+    background: linear-gradient(#f6eee4, #78593a);
+  }
+
+  #wrapper {
+    width:1920px;
+    margin: 0 auto;
+  }
+
+  main {
+    background-color:#f6ee4;
+  }
+
+
+}
+
+/*media query for print*/
+@media print {
+  body {
+    background-color:white;
+    color:black;
+  }
+}
