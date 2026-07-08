@@ -1,0 +1,137 @@
+/*
+Name: Dylan Parisotto
+Date: 6/22/2026
+file name: styles.css
+*/
+
+/*CSS Reset*/
+body, header, nav, main, footer, img, h1 {
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+/*style rules for header content*/
+header{
+  text-align:center;
+  font-size:3em;
+  color:#373684;
+}
+
+header h1 {
+  font-style: italic;
+}
+
+/*Style rules for navigation area */
+nav{
+  background-color:#373684;
+  position:-webkit-sticky;
+	position:sticky;
+	top: 0;
+	padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul{
+  text-align: center;
+  text-decoration:none;
+}
+
+nav li {
+  font-size: 1.5em;
+  padding: 4%;
+  display:inline-block;
+  font-family:"Open Sans", Arial, sans-serif;
+}
+
+nav li a {
+  color:#fff;
+  background-color:#373684;
+  display: block;
+  text-decoration: none;
+}
+
+/*Style rules for main content*/
+main {
+  padding:2%;
+  background-color:#e5e9fc;
+  overflow:auto;
+  font-family:"Inter",Arial,sans-serif;
+}
+
+main p {
+  font-size:1.25em;
+}
+
+/*style rules for footer content*/
+footer {
+  text-align:center;
+}
+
+footer a {
+  color:#4645a8;
+  text-decoration:none;
+}
+
+
+#tab-desktop {
+  display: none;
+}
+
+header {
+  font-size: 1.6em;
+}
+
+#contact {
+  text-align:center;
+}
+
+/*media for mobile*/
+@media screen and (min-width: 480px) {
+  header {
+    font-size: 2em;
+  }
+
+  nav li {
+    padding: 2%;
+  }
+}
+/*media for desktop*/
+@media screen and (min-width: 768px) {
+  #tab-desktop {
+    display: block;
+  }
+
+  #mobile {
+    display: none;
+  }
+
+  header {
+    font-size: 2.5em;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li {
+    padding: 1% 2%;
+  }
+
+  nav li a:hover {
+    color: #373684;
+    background-color:#fff;
+  }
+
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
