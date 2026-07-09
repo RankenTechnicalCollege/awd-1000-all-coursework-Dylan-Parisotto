@@ -14,6 +14,7 @@ body, header, nav, main, footer, img, h1 {
 img{
   max-width:100%;
   display:block;
+
 }
 
 /*style rules for header content*/
@@ -27,14 +28,16 @@ header h1 {
   font-style: italic;
 }
 
+header p {
+  margin: 0;
+}
+
 /*Style rules for navigation area */
 nav{
   background-color:#373684;
   position:-webkit-sticky;
 	position:sticky;
-	top: 0;
-	padding: 1%;
-    margin-bottom: 1%;
+	top: 0em;
 }
 
 nav ul{
@@ -43,8 +46,7 @@ nav ul{
 }
 
 nav li {
-  font-size: 1.5em;
-  padding: 4%;
+  font-size:1.5em;
   display:inline-block;
   font-family:"Open Sans", Arial, sans-serif;
 }
@@ -59,7 +61,6 @@ nav li a {
 /*Style rules for main content*/
 main {
   padding:2%;
-  background-color:#e5e9fc;
   overflow:auto;
   font-family:"Inter",Arial,sans-serif;
 }
@@ -100,6 +101,13 @@ header {
   nav li {
     padding: 2%;
   }
+  body {
+    background-color:#9B9BC2;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 /*media for desktop*/
 @media screen and (min-width: 768px) {
@@ -120,18 +128,22 @@ header {
     justify-content: center;
   }
 
-  nav li {
-    padding: 1% 2%;
+  nav li a {
+    padding: 1em 2em;
   }
 
   nav li a:hover {
     color: #373684;
     background-color:#fff;
+    border-radius: 50%;
   }
 
   main {
     max-width: 960px;
     margin: 0 auto;
   }
+  
+  body {
+    background: linear-gradient(to right, #fff, #373684);
+  }
 }
-
