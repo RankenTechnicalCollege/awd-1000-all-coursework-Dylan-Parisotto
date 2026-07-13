@@ -1,0 +1,205 @@
+/*
+Student Name: Dylan Parisotto
+Date: 6/18/2026
+File Name: style.css
+*/
+
+/*CSS Reset*/
+body, header, nav, main, footer, img, h1, h3, ul {
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+/*style rules for body and images*/
+body {
+  background-color:#f6eee4;
+}
+
+img {
+  max-width:100%;
+  display:block;
+}
+
+/*style rules for mobile viewport*/
+
+/*style rules to show mobile class and hide tab-desk class*/
+.tab-desk {
+  display:none;
+}
+
+/*Style rules for header area*/
+h1, h3 {
+  padding:2%;
+  text-align:center
+}
+
+/*style rules for navigation area*/
+nav {
+  background-color:#2a1f14;
+}
+
+nav ul {
+  list-style-type:none;
+  margin:0;
+  text-align:center;
+}
+
+nav li {
+  display:inline-block;
+  font-size:1.5em;
+  font-family:Geneva,Arial,sans-serif;
+  font-weight:bold;
+}
+
+nav li a {
+  display:block;
+  color:#f6eee4;
+  padding: vertical 0.5em horizontal 2em;
+  text-decoration:none;
+}
+
+/*style rules for main content*/
+main {
+  padding:2%;
+  font-family:Lora,Verdana, Arial, Helvetica, sans-serif;
+}
+
+main p {
+  font-size:1.25em;
+}
+
+main h3 {
+  padding:top 3%
+}
+
+main ul {
+  list-style-type:square;
+}
+
+.link {
+  color:#4d3319;
+  text-decoration:none;
+  font-weight:bold;
+  font-style:italic;
+}
+
+.action {
+  font-size:1.75em;
+  font-weight:bold;
+  text-align:center;
+}
+
+.round {
+  border-radius:6px
+}
+
+#info ul {
+  margin:left 10%;
+}
+
+#contact {
+  text-align:center;
+}
+
+.tel-link {
+  background-color:#2a1f14;
+}
+
+.tel-link a {
+  color:#f6eee4;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.mobile h1 {
+  font-family:"Emblema One",Arial,sans-serif;
+}
+
+.mobile h3 {
+  font-family:Lora,Arial,sans-serif;
+}
+
+/*style rules for footer content*/
+footer {
+  font-size:0.85em;
+  background-color:#2a1f14;
+  color:#f3e6d8;
+  padding:horizontal 0% vertical 1%;
+}
+
+footer a {
+  color:#f3e6d8;
+  text-decoration:none;
+}
+
+/*media query for tablet viewport*/
+@media screen and (min-width:630px), print {
+  /*tablet viewport: show tab-desk class, hide mobile class*/
+  .tab-desk {
+    display:block;
+  }
+
+  .mobile {
+    display:none;
+  }
+
+  /*tablet viewport: style rules for nav area*/
+  nav li {
+    display:inline-block;
+    font-size:1.25em;
+  }
+  nav li a {
+    padding:0.5em;
+  }
+
+
+} 
+
+/*media query for desktop viewport*/
+@media screen and (min-width:1000px), print {
+  nav li {
+    font-size:1.5em;
+  }
+
+  nav li a {
+    padding: 0.5em 1.5em;
+  }
+
+  nav li a:hover {
+    color:#2a1f14;
+    background-color: #f6eee4;
+  }
+
+  /*desktop viewport: style rules for main content*/
+  #info ul {
+    margin-left: 5%;
+  }
+
+}
+
+/*media query for large desktop viewports*/
+@media screen and (min-width:1921px) {
+  body {
+    background: linear-gradient(#f6eee4, #78593a);
+  }
+
+  #wrapper {
+    width:1920px;
+    margin: 0 auto;
+  }
+
+  main {
+    background-color:#f6ee4;
+  }
+
+
+}
+
+/*media query for print*/
+@media print {
+  body {
+    background-color:white;
+    color:black;
+  }
+}

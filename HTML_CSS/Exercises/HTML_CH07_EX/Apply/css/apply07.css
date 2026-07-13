@@ -1,11 +1,11 @@
 /*
-Author:
-Date:
-File Name: 
+Author: Dylan Parisotto
+Date: 7/9/2026
+File Name: apply07.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div {
+body, header, nav, main, footer, h1, div, section, article, aside {
     margin: 0;
     padding: 0;
     border: 0;
