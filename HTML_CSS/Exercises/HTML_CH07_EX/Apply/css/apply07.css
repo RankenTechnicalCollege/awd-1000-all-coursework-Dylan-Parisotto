@@ -79,14 +79,27 @@ footer {
 @media screen and (min-width: 650px), print {
     .grid {
 			display:grid;
-			grid-template-columns:2 collumns;
-			
+			grid-template-columns:1fr 1fr;
+			grid-gap:20px;
 		}
+
+		aside {
+			grid-column:span 2;
+		}
+
+
     
 }
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1024px), print {
+	.grid {
+		display:grid;
+		grid-template-columns:1fr 1fr 1fr 1fr;
+	}
 
+	aside {
+		grid-column:span 4;
+	}
     
 }
