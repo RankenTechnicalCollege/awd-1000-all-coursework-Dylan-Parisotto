@@ -1,0 +1,64 @@
+/*
+Author:
+Date:
+File Name: 
+*/
+
+/* CSS Reset */
+body, main, footer, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body */
+body {
+	background-color: #f4f9e1;
+}
+
+/* Style rule for the container */
+#container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Style for the footer element */
+footer {
+	font-size: .70em;
+	text-align: center;
+}
+
+/* Style rule for table */
+table {
+	width:80%;
+	margin:0 auto;
+	border:3px solid #71881b;
+}
+
+/* Style rule for the table, rows, headings, and data cells */
+table, tr, th, td {
+	border-collapse:collapse;
+	padding:2%;
+}
+
+/* Style rule for the table caption */
+caption {
+	font-size:2em;
+	padding:2%;
+	margin-top:2%;
+}
+
+/* Style rule for table headings and data cells */
+th, td {
+	border:1px solid #7188bb;
+}
+
+/* Style rule for table data cells */
+td {
+	text-align:center;
+}
+
+/* Style rule for odd table rows */
+tr:nth-child(odd) {
+	background-color:#d3e788
+}
