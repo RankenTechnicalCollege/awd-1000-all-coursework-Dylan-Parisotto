@@ -26,7 +26,7 @@ footer {
 }
 
 fieldset, input {
-		margin-bottom:2%;
+	margin-bottom:2%;
 }
 
 legend {
@@ -38,7 +38,7 @@ legend {
 	border:none;
 	margin: 0 auto;
 	display:block;
-	padding: 10px 20px;
+	padding: 5%;
 	background-color:#003399;
 	font-size:1.25em;
 	border-radius:10px;
