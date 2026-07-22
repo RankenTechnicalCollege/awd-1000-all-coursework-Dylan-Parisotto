@@ -1,0 +1,223 @@
+/*
+Name: Dylan Parisotto
+Date: 6/22/2026
+file name: styles.css
+*/
+
+/*CSS Reset*/
+body, header, nav, main, footer, img, h1 {
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+img{
+  max-width:100%;
+  display:block;
+
+}
+
+/*style rules for header content*/
+header{
+  text-align:center;
+  font-size:3em;
+  color:#373684;
+}
+
+header h1 {
+  font-style: italic;
+}
+
+header p {
+  margin: 0;
+}
+
+/*Style rules for navigation area */
+nav{
+  background-color:#373684;
+  position:-webkit-sticky;
+	position:sticky;
+	top: 0em;
+}
+
+nav ul{
+  text-align: center;
+  text-decoration:none;
+}
+
+nav li {
+  font-size:1.5em;
+  display:inline-block;
+  font-family:"Open Sans", Arial, sans-serif;
+}
+
+nav li a {
+  color:#fff;
+  background-color:#373684;
+  display: block;
+  text-decoration: none;
+}
+
+/*Style rules for main content*/
+main {
+  padding:2%;
+  overflow:auto;
+  font-family:"Inter",Arial,sans-serif;
+}
+
+main p {
+  font-size:1.25em;
+}
+
+/*style rules for footer content*/
+footer {
+  text-align:center;
+}
+
+footer a {
+  color:#4645a8;
+  text-decoration:none;
+}
+
+
+#tab-desktop {
+  display: none;
+}
+
+header {
+  font-size: 1.6em;
+}
+
+#contact {
+  text-align:center;
+}
+
+figure {
+  border:4px solid #2a1f14;
+  box-shadow:6px 6px 10px #373684;
+  max-width:400px;
+  margin:2% auto;
+}
+
+figcaption {
+  padding:2%;
+  border-top:4px solid #2a1f14;
+}
+
+/* Style rules for table */
+table {
+  display: none;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.mobile-table {
+  display: block;
+}
+
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+
+th, td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #78593a;
+  color: #f6eee4;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/*media for mobile*/
+@media screen and (min-width: 480px) {
+  header {
+    font-size: 2em;
+  }
+
+  nav li {
+    padding: 2%;
+  }
+  body {
+    background-color:#9B9BC2;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .grid {
+    display:grid;
+    grid-template-columns:1fr 1fr
+  }
+  aside {
+    grid-column:1 / span 2
+  }
+
+  /* Tablet/Desktop Viewport: Style rules for table */
+  table {
+    display: block;
+    width: 80%;
+    margin:0 auto;
+  }
+
+  .mobile-table {
+    display: none;
+  }
+}
+/*media for desktop*/
+@media screen and (min-width: 768px) {
+  #tab-desktop {
+    display: block;
+  }
+
+  #mobile {
+    display: none;
+  }
+
+  header {
+    font-size: 2.5em;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li a {
+    padding: 1em 2em;
+  }
+
+  nav li a:hover {
+    color: #373684;
+    background-color:#fff;
+    border-radius: 50%;
+    opacity:50%;
+  }
+
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  body {
+    background: linear-gradient(to right, #fff, #373684);
+  }
+
+  .grid {
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-gap:10px;
+  }
+
+  aside {
+    grid-column:1 / span 4
+  }
+}
