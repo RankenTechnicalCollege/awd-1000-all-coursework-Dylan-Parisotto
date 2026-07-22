@@ -27,23 +27,23 @@ footer {
 
 fieldset, input {
 		margin-bottom:2%;
-	}
+}
 
-	legend {
-		font-size:1.25em;
-		font-weight:bold;
-	}
+legend {
+	font-size:1.25em;
+	font-weight:bold;
+}
 
-	.btn {
-		border:none;
-		margin: 0 auto;
-		display:block;
-		padding:5%;
-		background-color:#003399;
-		font-size:1.25em;
-		border-radius:10px;
-		color:#fff;
-	}
+.btn {
+	border:none;
+	margin: 0 auto;
+	display:block;
+	padding: 10px 20px;
+	background-color:#003399;
+	font-size:1.25em;
+	border-radius:10px;
+	color:#fff;
+}
 	
 
 
