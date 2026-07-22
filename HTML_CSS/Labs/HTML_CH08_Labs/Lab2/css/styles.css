@@ -24,9 +24,11 @@ img {
 /*style rules for mobile viewport*/
 
 /*style rules to show mobile class and hide tab-desk class*/
-.tab-desk {
+.tab-desk, .desktop {
   display:none;
 }
+
+
 
 /*Style rules for header area*/
 h1, h3 {
@@ -117,7 +119,7 @@ figcaption {
   margin:left 10%;
 }
 
-#contact {
+#contact, #form h2 {
   text-align:center;
 }
 
@@ -137,6 +139,32 @@ figcaption {
 
 .mobile h3 {
   font-family:Lora,Arial,sans-serif;
+}
+
+/* Style rules for form elements */
+
+fieldset, input,textarea {
+  margin-bottom: 2%;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label {
+  display: block;
+  padding-top: 2%;
+}
+
+form #submit {
+  margin: 0 auto;
+  display: block;
+  padding: 2%;
+  background-color: #78593a;
+  color: #f6eee4;
+  font-size: 1.25em;
+  border-radius: 10px;
 }
 
 /*style rules for footer content*/
@@ -159,7 +187,7 @@ footer a {
     display:block;
   }
 
-  .mobile {
+  .mobile, .mobile-tablet {
     display:none;
   }
 
@@ -181,10 +209,20 @@ footer a {
   aside {
     grid-column:1 / span 2
   }
+
+  /*style rules for form element*/
+  form {
+    width:70%;
+    margin:0 auto;
+  }
 } 
 
 /*media query for desktop viewport*/
 @media screen and (min-width:1000px), print {
+  .mobile-tablet {
+    display:none;
+  }
+
   nav li {
     font-size:1.5em;
   }
@@ -211,6 +249,49 @@ footer a {
 
   aside {
     grid-column:1 / span 3
+  }
+
+  /*style rules for table*/
+  table {
+    border: 1px solid #2a1f14;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+
+  caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+  }
+
+  th, td {
+    border: 1px solid #2a1f14;
+    padding: 1%;
+  }
+
+  th {
+    background-color: #2a1f14;
+    color: #fff;
+    font-size: 1.15em;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #deccba;
+  }
+
+  /* Desktop Viewport: Style rules for form elements */
+  form {
+    width: auto;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+
+  .btn {
+    grid-column: 1 / span 2;
   }
 }
 
