@@ -1,0 +1,67 @@
+/* style rules for universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* style rules for body */
+body {
+  background-color: #ffe5dc;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* style rules for main */
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* style rules for table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid #fd4d0c;
+  box-shadow: 8px 8px 0 #792101;
+  background-color: #fff;
+}
+
+/* style rules for caption */
+caption {
+  font-size: 24px;
+  font-weight: bold;
+  color: #792101;
+  padding: 15px 0;
+  background-color: #ffe5dc;
+}
+
+/* style rules for th */
+th {
+  background-color: #fd4d0c;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  border: 2px solid #a22c02;
+  font-weight: bold;
+}
+
+/* style rules for td */
+td {
+  padding: 12px;
+  border: 2px solid #a22c02;
+  text-align: center;
+}
+
+/* style rules for tbody */
+tbody tr:nth-child(odd) {
+  background-color: #fe9772;
+}
+
+/* style rules for footer */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #792101;
+}
