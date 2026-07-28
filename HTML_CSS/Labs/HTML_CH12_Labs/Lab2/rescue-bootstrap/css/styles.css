@@ -1,8 +1,30 @@
 /*
-    Student Name: Maria Cruz
-    Date: Current Date
+    Student Name: Dylan Parisotto
+    Date: 7/28/2026
     File Name: styles.css
 */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../images/baby-hawk.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.welcome {
+    position: absolute;
+    top: 40%;
+}
+
+.display-1 {
+    font-size: 4em;
+}
+
+.bg-brown {
+    background-color: #2a1f14;
+}
 
 
 
