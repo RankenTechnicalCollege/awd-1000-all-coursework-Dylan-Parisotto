@@ -3,13 +3,14 @@
       Project 03-02
 
       Application to generate a slide gallery
-      Author: 
-      Date:   
+      Author: Dylan Parisotto
+      Date:   7/30/2026
 
-      Filename: project03-02.js
+      Filename: project03-02_txt.js
 */
 
 let captions = new Array(14);
+let htmlCode = "";
 captions[0]="International Space Station fourth expansion [2009]";
 captions[1]="Assembling the International Space Station [1998]";
 captions[2]="The Atlantis docks with the ISS [2001]"; 
@@ -24,5 +25,14 @@ captions[10]="Maneuvering in space with the Canadarm2 [2006]";
 captions[11]="The International Space Station second expansion [2006]";
 captions[12]="The International Space Station third expansion [2007]";
 captions[13]="The ISS over the Ionian Sea [2007]";
+
+for (let i = 0; i < captions.length; i++) {
+      htmlCode += "<figure>";
+      htmlCode += "<img alt='' src='slide" + i + ".jpg' />";
+      htmlCode += "<figcaption>" + captions[i] + "</figcaption>";
+      htmlCode += "</figure>";
+}
+
+document.getElementById("gallery").innerHTML = htmlCode;
 
 
