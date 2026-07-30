@@ -88,6 +88,7 @@ table#calculator {
    -moz-box-shadow: rgb(101, 101, 101) 20px 10px 20px;
    -webkit-box-shadow: rgb(101, 101, 101) 20px 10px 20px;
    box-shadow: rgb(101, 101, 101) 20px 10px 20px;
+
 }
 
 
@@ -95,6 +96,8 @@ table#calculator td {
    width: 40px;
    height: 40px;
    margin: 10px;
+   
+   vertical-align:top;
 }
 
 table#calculator input {
