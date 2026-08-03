@@ -3,16 +3,16 @@
       Project 04-04
 
       Application to determine change from a cash amount
-      Author: 
-      Date:   
+      Author: Dylan Parisotto
+      Date:   7/30/2026
 
       Filename: project04-04.js
 */
-
+"use strict";
 // Global variables
-let cashBox = document.getElementById(cash);
-let billBox = document.getElementById(bill);
-let changeBox = document.getElementById(change);
+let cashBox = document.getElementById("cash");
+let billBox = document.getElementById("bill");
+let changeBox = document.getElementById("change");
 
 // Event handlers to be run when the cash or bill value changes
 cashBox.addEventListener("change", runRegister);
@@ -33,14 +33,22 @@ function zeroTheRegister() {
 }
 
 // Function to run the cash register
-function runTheRegister() {
+function runRegister() {
    zeroTheRegister();
    
    let changeValue = cashBox.value - billBox.value;  // calculate the change 
-   
-   changeBox.value = formatCurrency(changeValue); // format the change as currency
-   
-   calcChange(changeValue); // Determine the units of currency needed for the change
+
+   try {
+      if (!(changeValue >= 0)) {
+         throw "Cash amount doesn't cover the bill";
+      }
+
+      changeBox.value = formatCurrency(changeValue);
+      calcChange(changeValue);
+   }
+   catch (err) {
+      document.getElementById("warning").innerHTML = err;
+   }
 }
 
 // Function to calculate the change by each unit of currency
@@ -58,31 +66,33 @@ function calcChange(changeValue) {
    // Determine the number of $5 bills
    let bill5Amt = determineCoin(changeValue, 5);
    document.getElementById("bill5").innerHTML = bill5Amt;
-   changeValue -=  bill5Amt*3;  
+   changeValue -=  bill5Amt*5;  
    
    // Determine the number of $1 bills
    let bill1Amt = determineCoin(changeValue, 1);
    document.getElementById("bill1").innerHTML = bill1Amt;
    changeValue -=  bill1Amt*1;  
    
+   // Convert to integer cents to avoid floating-point drift across coin subtractions
+   let centsValue = Math.round(changeValue * 100);
+
    // Determine the number of quarters
-   let coin25Amt = determineCoin(changeValue*100, 25);
+   let coin25Amt = determineCoin(centsValue, 25);
    document.getElementById("coin25").innerHTML = coin25Amt;
-   changeValue -= coin25Amt*0.25;   
-   
+   centsValue -= coin25Amt * 25;
+
    // Determine the number of dimes
-   let coin10Amt = determineCoin(changeValue*100, 10);
+   let coin10Amt = determineCoin(centsValue, 10);
    document.getElementById("coin10").innerHTML = coin10Amt;
-   changeValue -= coin10Amt*0.10; 
-   
+   centsValue -= coin10Amt * 10;
+
    // Determine the number of nickels
-   let coin5Amt = determineCoin(changeValue*100, 5);
+   let coin5Amt = determineCoin(centsValue, 5);
    document.getElementById("coin5").innerHTML = coin5Amt;
-   changeValue -= coin5Amt*0.05;  
-   
+   centsValue -= coin5Amt * 5;
+
    // Determine the number of pennies
-   // The Math.round() method rounds the value to the nearest integer
-   let coin1Amt = Math.round(changeValue*100);
+   let coin1Amt = centsValue;
    document.getElementById("coin1").innerHTML = coin1Amt;
 }
 
