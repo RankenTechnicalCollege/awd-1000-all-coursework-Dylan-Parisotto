@@ -1,0 +1,37 @@
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1.5rem;
+	background-color: #1f2937;
+}
+
+nav a {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 0.75rem;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul a {
+	display: inline-block;
+	padding: 0.5rem 0.9rem;
+	border: 1px solid #93c5fd;
+	border-radius: 6px;
+	background-color: #3b82f6;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
