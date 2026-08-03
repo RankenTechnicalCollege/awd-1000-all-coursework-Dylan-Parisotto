@@ -19,7 +19,7 @@ for (let n = sourceDoc.firstElementChild; n !== null; n = n.nextElementSibling) 
    if (n.nodeName === heading) {
       let anchor = document.createElement("a");
       anchor.name = "doclink" + headingCount;
-      n.insertBefore(anchor, n.firstChild);a
+      n.insertBefore(anchor, n.firstChild);
 
       let listItem = document.createElement("li");
       let link = document.createElement("a");
