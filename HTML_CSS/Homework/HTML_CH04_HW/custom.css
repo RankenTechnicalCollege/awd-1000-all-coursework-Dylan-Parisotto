@@ -1,55 +1,45 @@
-/* External CSS - demonstrates cascade */
 
-/* a. Relative measurement (em) */
 body {
   margin: 1.5em;
   padding: 1em;
 }
 
-/* b. Absolute measurement (px) */
 article {
   max-width: 800px;
   padding: 20px;
   border: 2px solid #333;
 }
 
-/* c. Hex color value */
 h2 {
   color: #2d5a3d;
   border-bottom: 3px solid #2d5a3d;
 }
 
-/* d. RGB color value */
 h3 {
   color: rgb(70, 130, 180);
 }
 
-/* e. RGBA color value */
 section {
   background-color: rgba(100, 150, 200, 0.2);
   padding: 15px;
   border-left: 4px solid rgba(100, 150, 200, 0.5);
 }
 
-/* f. Descendent selector */
 article h2 {
   margin-top: 30px;
   font-style: italic;
 }
 
-/* g. Multiple selectors */
 h1, h2, h3 {
   font-family: 'Arial', sans-serif;
   margin-bottom: 15px;
 }
 
-/* h. Child selector */
 article > p {
   text-align: justify;
   margin: 12px 0;
 }
 
-/* i. Pseudo-class selector for :hover and :focus */
 a:hover,
 a:focus {
   background-color: #ffcc00;
@@ -59,12 +49,10 @@ a:focus {
   outline: 2px solid #ff6600;
 }
 
-/* j. Shorthand font property (family, size, style, weight, line-height) */
 ul li {
   font: italic 500 16px / 1.8 'Georgia', serif;
 }
 
-/* k. Font shadow */
 h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
