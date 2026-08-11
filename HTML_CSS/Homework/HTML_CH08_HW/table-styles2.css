@@ -1,0 +1,84 @@
+body {
+	font-family: "Times New Roman", Times, serif;
+	margin: 24px;
+}
+
+.table-box {
+	display: inline-block;
+	border: 1px solid #7d4b7f;
+	padding: 12px 14px 14px;
+}
+
+table {
+	border-collapse: collapse;
+	border: 2px solid #666;
+	font-size: 20px;
+}
+
+th,
+td {
+	border: 1px solid #888;
+	padding: 4px 10px;
+}
+
+.table-title {
+	background-color: #ffffff;
+	text-align: center;
+	font-size: 34px;
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+thead tr:nth-child(2) th {
+	background-color: #fff200;
+	text-align: left;
+	font-weight: bold;
+}
+
+.dept {
+	background-color: #ffffff;
+	text-align: left;
+	vertical-align: top;
+	white-space: nowrap;
+	font-weight: bold;
+}
+
+tbody td {
+	background-color: #ffffff;
+	text-align: left;
+}
+
+tr.highlight td,
+td.highlight,
+th.highlight {
+	background-color: #fff200;
+}
+
+.years {
+	text-align: right;
+	width: 90px;
+}
+
+tfoot td {
+	border-top: 2px solid #666;
+}
+
+.total-label,
+.total-years {
+	background-color: #fff200;
+	font-weight: bold;
+}
+
+.total-label {
+	text-align: center;
+}
+
+.total-years {
+	text-align: right;
+}
+
+h2 {
+	margin: 14px 0 0;
+	font-size: 40px;
+	font-weight: bold;
+}
