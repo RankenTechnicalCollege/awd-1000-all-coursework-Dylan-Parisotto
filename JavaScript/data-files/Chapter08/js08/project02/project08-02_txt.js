@@ -17,6 +17,41 @@ const BOX_WIDTH = 800;  // width of the container in pixels
 
 /*--------------- Object Code --------------------*/
 
+let box = {
+   width: BOX_WIDTH,
+   height: BOX_HEIGHT,
+   xPos: 0,
+   yPos: 0
+};
+
+function ball(size) {
+   this.radius = size;
+   this.xPos = null;
+   this.yPos = null;
+   this.xVelocity = null;
+   this.yVelocity = null;
+}
+
+ball.prototype.moveWithin = function(container) {
+   let ballTop = this.yPos;
+   let ballLeft = this.xPos;
+   let ballBottom = this.yPos + this.radius;
+   let ballRight = this.xPos + this.radius;
+
+   if (ballTop < 0 || ballBottom > container.height) {
+      container.yPos += this.yVelocity;
+      this.yVelocity = -this.yVelocity;
+   }
+
+   if (ballLeft < 0 || ballRight > container.width) {
+      container.xPos += this.xVelocity;
+      this.xVelocity = -this.xVelocity;
+   }
+
+   this.yPos += this.yVelocity;
+   this.xPos += this.xVelocity;
+};
+
 
 
 
@@ -44,10 +79,23 @@ addBall.onclick = function() {
    ballImage.style.top = (BOX_HEIGHT - BALL_RADIUS)/2 + "px";
    
    // Append the ball image to the box
-   boxImage.appendChild(ballImage);     
-   
-   
-   
+   boxImage.appendChild(ballImage);
+
+   let newBall = new ball(BALL_RADIUS);
+   newBall.yPos = (BOX_HEIGHT - BALL_RADIUS) / 2;
+   newBall.xPos = (BOX_WIDTH - BALL_RADIUS) / 2;
+   newBall.yVelocity = rand(-10, 10);
+   newBall.xVelocity = rand(-10, 10);
+
+   window.setInterval(function() {
+      newBall.moveWithin(box);
+      ballImage.style.top = newBall.yPos + "px";
+      ballImage.style.left = newBall.xPos + "px";
+      boxImage.style.top = box.yPos + "px";
+      boxImage.style.left = box.xPos + "px";
+      box.xPos = 0;
+      box.yPos = 0;
+   }, 25);
 };
 
 
