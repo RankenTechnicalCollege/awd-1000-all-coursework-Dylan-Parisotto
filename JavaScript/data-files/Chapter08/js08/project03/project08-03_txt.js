@@ -23,6 +23,42 @@
 
 
 
+let cart = {
+   items: [],
+   addItem: function(foodItem) {
+      this.items.push(foodItem);
+   }
+};
+
+function Pizza(size, crust) {
+   this.size = size;
+   this.crust = crust;
+   this.toppings = [];
+}
+
+Pizza.prototype.addTopping = function(topping) {
+   this.toppings.push(topping);
+};
+
+Pizza.prototype.addToCart = function(cart) {
+   cart.items.push(this);
+};
+
+Pizza.prototype.summarize = function() {
+   let summary = "Pizza: " + this.size + " " + this.crust;
+
+   for (let i = 0; i < this.toppings.length; i++) {
+      summary += " " + this.toppings[i].name + "(" + this.toppings[i].side + ")";
+   }
+
+   return summary;
+};
+
+function Topping(name, side) {
+   this.name = name;
+   this.side = side;
+}
+
 /*----------------------------- Interface Code -------------------------*/
 
 let pizzaPreviewBox = document.getElementById("previewBox");         // pizza image 
@@ -79,13 +115,29 @@ function drawPizza() {
 
 // Function to build the pizza
 function buildPizza() {
-   let checkedToppings = document.querySelectorAll("input.topping:checked"); 
+   let checkedToppings = document.querySelectorAll("input.topping:checked");
+   let myPizza = new Pizza(pizzaSizeBox.value, pizzaCrustBox.value);
 
+   for (let i = 0; i < checkedToppings.length; i++) {
+      if (checkedToppings[i].value !== "none") {
+         let myTopping = new Topping(checkedToppings[i].name, checkedToppings[i].value);
+         myPizza.addTopping(myTopping);
+      }
+   }
 
-}    
+   return myPizza;
+}
 
 // Function to add the built pizza to the shopping cart
 function updateCart() {
+   let myPizza = buildPizza();
+   cart.addItem(myPizza);
+   console.log(cart);
 
+   let cartItem = document.createElement("p");
+   cartItem.textContent = myPizza.summarize();
+   cartBox.appendChild(cartItem);
 
-}  
+   clearPizzaImage();
+   clearToppings();
+}
