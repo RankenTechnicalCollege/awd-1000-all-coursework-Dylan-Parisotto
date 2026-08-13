@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",          // Which JS version to output
+    "module": "nodenext",        // Module system (modern ES modules in Node.js)
+    "rewriteRelativeImportExtensions": true, // Lets imports use .ts extensions (see below)
+    "outDir": "./dist",          // Where compiled .js files go
+    "rootDir": "./src",          // Where your .ts source files live
+    "strict": true,               // Enable all strict type checks (recommended)
+    "esModuleInterop": true,      // Cleaner default imports
+    "skipLibCheck": true          // Skip type-checking .d.ts declaration files
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
