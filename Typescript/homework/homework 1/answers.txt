@@ -1,0 +1,9 @@
+1. Using an explicit type like `string` is useful when you want to clearly state what kind of value a variable should hold, or when it does not have a value yet. TypeScript can also figure out the type from the value assigned to it. I use explicit types when they make the code easier to understand or safer.
+
+2. `any` turns off type checking for a value, so you can do anything with it and TypeScript will not warn you. `unknown` is safer because TypeScript makes you check the value's type before using it. This prevents accidental runtime errors from invalid operations.
+
+3. Catching an error at compile time means TypeScript reports it before the JavaScript runs. Catching it at runtime means the program already started and then fails while executing. For example, assigning a string to a variable typed as `number` is a compile time error in TypeScript.
+
+4. A tuple is a fixed length array where each position has a specific type, like `[string, number]`. A regular array usually allows any length and all elements are typically the same type. Tuples are useful when order and exact shape matter.
+
+5. `"strict": true` enables TypeScript's strongest checking rules, including checks for `null` and `undefined`. This helps catch more bugs early and makes code safer to change. Real projects keep it on to improve reliability and maintainability.
