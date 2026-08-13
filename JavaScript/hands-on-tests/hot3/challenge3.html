@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Challenge 3 - Upvote/Downvote</title>
+	<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+		crossorigin="anonymous"
+	>
+	<script src="challenge3.js" defer></script>
+</head>
+<body class="bg-body-tertiary">
+	<main class="container py-5">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-10 col-lg-8 col-xl-7">
+				<div class="card shadow-sm border-0 overflow-hidden">
+					<div class="bg-dark text-white p-4 p-md-5">
+						<p class="text-uppercase text-info-emphasis mb-2 small fw-semibold">Single Product Review</p>
+						<h1 class="display-6 fw-semibold mb-3">Aurora Headphones</h1>
+						<p class="lead mb-0 text-white-50">
+							A premium wireless headset with crisp audio, active noise cancellation, and all-day comfort.
+						</p>
+					</div>
+
+					<div class="card-body p-4 p-md-5">
+						<div class="row g-4 align-items-stretch">
+							<div class="col-12 col-lg-7">
+								<h2 class="h5 mb-3">Customer Review</h2>
+								<p class="mb-4 text-body-secondary">
+									Users can rate this product as many times as they want. Use the buttons below to track the totals and the live score.
+								</p>
+								<div class="d-flex flex-wrap gap-2">
+									<button id="upvoteButton" type="button" class="btn btn-success px-4">Thumbs Up</button>
+									<button id="downvoteButton" type="button" class="btn btn-danger px-4">Thumbs Down</button>
+								</div>
+							</div>
+
+							<div class="col-12 col-lg-5">
+								<div class="h-100 p-4 rounded-4 bg-body-secondary border">
+									<h2 class="h5 mb-3">Live Rating</h2>
+									<div class="row g-3">
+										<div class="col-6">
+											<div class="p-3 rounded-3 bg-white border h-100">
+												<div class="text-uppercase small text-body-secondary">Upvotes</div>
+												<div id="upvoteCount" class="display-6 fw-semibold mb-0">0</div>
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="p-3 rounded-3 bg-white border h-100">
+												<div class="text-uppercase small text-body-secondary">Downvotes</div>
+												<div id="downvoteCount" class="display-6 fw-semibold mb-0">0</div>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="p-3 rounded-3 bg-white border">
+												<div class="text-uppercase small text-body-secondary">Total Score</div>
+												<div id="scoreCount" class="display-5 fw-semibold mb-0">0</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+</body>
+</html>
