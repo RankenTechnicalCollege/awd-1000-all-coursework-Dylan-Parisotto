@@ -1,0 +1,2 @@
+1. Narrowing is when TypeScript figures out what type something is based on a check. A typeof check can tell TypeScript if something is a string, number, or another type.
+2. A generic type like <T> is a placeholder for a type. It is useful because it lets the same code work with different types without getting them mixed up.
