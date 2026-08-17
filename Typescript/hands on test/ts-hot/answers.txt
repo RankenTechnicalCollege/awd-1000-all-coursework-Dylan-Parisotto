@@ -1,0 +1,4 @@
+1. Compile-time checking finds mistakes before the program runs, while runtime checking finds them while the program is running. For example, TypeScript would catch trying to use a private scores field before FitTrack runs, which helps prevent errors from reaching users.
+2. The Booking type used a type property to tell TypeScript if the booking was confirmed or cancelled. Without it, TypeScript would not know which properties were available, like spot or reason.
+3. The private keyword keeps a class field from being changed or accessed directly from outside the class. For example, the bookings array in FitnessMember can only be changed through the book() method.
+4. I used Partial for PlanUpdate, which made all the fields optional. This saved me from having to create a new interface with every field marked as optional.
