@@ -1,0 +1,2 @@
+1. The ? after a property name in an interface makes that property optional, so an object can be created without providing it. After a function parameter, ? means the caller does not have to provide that argument.
+2. An interface describes the shape of an object and can be extended by another interface. A type can also describe objects, but it is especially useful for combinations of types. An interface would usually be chosen for an object contract that may be extended, and a type for more complex type combinations.
