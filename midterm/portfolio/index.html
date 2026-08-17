@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dylan Parisotto | Web Developer</title>
+  <meta name="description" content="Portfolio of Dylan Parisotto, an Application Web Development student specializing in modern, responsive web experiences." />
+  <meta name="theme-color" content="#4f46e5" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
+
+  <!-- ================= HEADER / NAV ================= -->
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">
+        Dylan Parisotto<span class="brand-dot">.</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks"
+        aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#coursework">Coursework</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item ms-lg-2"><a class="nav-link btn btn-accent px-3" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <header id="home" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <p class="hero-eyebrow mb-3"><span class="status-dot"></span> Available for internships &amp; junior roles</p>
+          <h1 class="hero-title mb-3">Hi, I&apos;m Dylan &mdash; I build clean, responsive <span class="text-accent">web experiences</span>.</h1>
+          <p class="hero-lead mb-4">Application Web Development student turning ideas into fast, accessible, and thoughtfully designed websites using modern front-end tools.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#portfolio" class="btn btn-accent btn-lg px-4">View my work</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg px-4">Get in touch</a>
+          </div>
+          <div class="hero-stats mt-5">
+            <div>
+              <span class="stat-num">15+</span>
+              <span class="stat-label">Projects built</span>
+            </div>
+            <div>
+              <span class="stat-num">6</span>
+              <span class="stat-label">Core technologies</span>
+            </div>
+            <div>
+              <span class="stat-num">3.5</span>
+              <span class="stat-label">GPA</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center">
+          <div class="hero-photo-wrap">
+            <img src="images/dylan.jpg" alt="Portrait of Dylan Parisotto" class="hero-photo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-md-5">
+          <div class="about-photo-wrap">
+            <img src="images/dylan.jpg" alt="Dylan Parisotto" class="img-fluid rounded-4" />
+          </div>
+        </div>
+        <div class="col-md-7">
+          <p class="section-eyebrow">About Me</p>
+          <h2 class="section-title mb-4">Passionate about building for the web</h2>
+          <p class="text-muted-2 mb-3">
+            I&apos;m an Application Web Development student with a love for translating designs into pixel-perfect,
+            responsive interfaces. My journey started with a single HTML page and has grown into a genuine passion
+            for crafting software that is both delightful to use and maintainable to build.
+          </p>
+          <p class="text-muted-2 mb-4">
+            I care about the details &mdash; semantic markup, accessibility, and clean, readable code. When I&apos;m not
+            studying new frameworks, you&apos;ll find me contributing to small open-source projects and rebuilding my
+            favorite apps to sharpen my skills.
+          </p>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="about-highlight">
+                <i class="bi bi-code-slash"></i>
+                <div>
+                  <span class="fw-semibold">Front-end focused</span>
+                  <small class="d-block text-muted-2">Responsive, accessible UIs</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="about-highlight">
+                <i class="bi bi-lightning-charge"></i>
+                <div>
+                  <span class="fw-semibold">Fast learner</span>
+                  <small class="d-block text-muted-2">Always exploring new tools</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RESUME ================= -->
+  <section id="resume" class="section section-alt">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section-eyebrow">Resume</p>
+        <h2 class="section-title">Experience &amp; Skills</h2>
+        <a href="resume.pdf" download class="btn btn-accent btn-lg mt-3 px-4">
+          <i class="bi bi-download me-2"></i>Download Resume
+        </a>
+      </div>
+
+      <div class="row g-4">
+        <!-- Summary & Experience -->
+        <div class="col-lg-6">
+          <div class="panel h-100">
+            <h3 class="panel-title"><i class="bi bi-person-badge me-2 text-accent"></i>Professional Summary</h3>
+            <p class="text-muted-2">
+              Dedicated checker/cashier with 10 months of experience in retail, specializing in efficient customer
+              service and cash handling. Proven ability to process transactions accurately while maintaining a balanced
+              cash drawer and ensuring compliance with store policies. Committed to enhancing the shopping experience
+              through friendly interactions and effective problem-solving.
+            </p>
+            <h3 class="panel-title mt-4"><i class="bi bi-briefcase me-2 text-accent"></i>Work Experience</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="timeline-date">October 2025 &ndash; Present</span>
+                <h4 class="timeline-heading">Checker / Cashier &mdash; Schnucks</h4>
+                <ul class="text-muted-2 mb-0 ps-3">
+                  <li>Process customer purchases accurately, scanning items, applying discounts, and handling cash, card, and digital payments while maintaining a balanced drawer.</li>
+                  <li>Deliver friendly, efficient checkout service, answering product and pricing questions and resolving minor issues to reduce wait times.</li>
+                  <li>Bag groceries carefully by item type and weight, double-checking orders for accuracy and assisting customers with loading.</li>
+                  <li>Verify identification for age-restricted items and promptly notify supervisors of concerns to support loss prevention and compliance.</li>
+                  <li>Maintain a clean, organized checkout area in accordance with store cleanliness and safety standards.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="col-lg-6">
+          <div class="panel h-100">
+            <h3 class="panel-title"><i class="bi bi-stars me-2 text-accent"></i>Key Skills</h3>
+            <p class="text-muted-2">Core strengths I bring to a fast-paced retail environment:</p>
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <span class="skill-badge"><i class="bi bi-shield-check"></i> Loss Prevention</span>
+              <span class="skill-badge"><i class="bi bi-emoji-smile"></i> Customer Service</span>
+              <span class="skill-badge"><i class="bi bi-upc-scan"></i> Point of Sale (POS) Systems</span>
+              <span class="skill-badge"><i class="bi bi-box-seam"></i> Inventory Restocking</span>
+              <span class="skill-badge"><i class="bi bi-cash-coin"></i> Cash Handling</span>
+            </div>
+
+            <p class="text-muted-2 mb-2 fw-semibold">Proficiency</p>
+            <div class="skill-bar">
+              <div class="d-flex justify-content-between"><span>Customer Service</span><span>95%</span></div>
+              <div class="progress" role="progressbar" aria-label="Customer service proficiency" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="d-flex justify-content-between"><span>Cash Handling</span><span>92%</span></div>
+              <div class="progress" role="progressbar" aria-label="Cash handling proficiency" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 92%"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="d-flex justify-content-between"><span>Point of Sale (POS) Systems</span><span>90%</span></div>
+              <div class="progress" role="progressbar" aria-label="POS systems proficiency" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-bar mb-0">
+              <div class="d-flex justify-content-between"><span>Inventory &amp; Loss Prevention</span><span>85%</span></div>
+              <div class="progress" role="progressbar" aria-label="Inventory and loss prevention proficiency" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COURSEWORK ================= -->
+  <section id="coursework" class="section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section-eyebrow">Coursework</p>
+        <h2 class="section-title">Academic projects &amp; classes</h2>
+        <p class="text-muted-2 mx-auto" style="max-width: 620px;">A closer look at the coursework that shaped my development skills, with the key outcomes from each.</p>
+      </div>
+
+      <div class="accordion coursework-accordion" id="courseworkAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#cw1" aria-expanded="true" aria-controls="cw1">
+              Responsive Web Design &amp; Front-End Fundamentals
+            </button>
+          </h3>
+          <div id="cw1" class="accordion-collapse collapse show" data-bs-parent="#courseworkAccordion">
+            <div class="accordion-body">
+              <p class="text-muted-2">Built mobile-first, accessible layouts from scratch using semantic HTML and modern CSS, culminating in a fully responsive multi-page marketing site.</p>
+              <p class="fw-semibold mb-1">Key accomplishments</p>
+              <ul class="text-muted-2">
+                <li>Achieved a 100/100 Lighthouse accessibility score on the final project.</li>
+                <li>Implemented a reusable component system using CSS custom properties.</li>
+              </ul>
+              <div class="d-flex gap-3">
+                <a href="#" class="btn btn-sm btn-accent"><i class="bi bi-box-arrow-up-right me-1"></i>Live Demo</a>
+                <a href="#" class="btn btn-sm btn-outline-dark"><i class="bi bi-github me-1"></i>Repository</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cw2" aria-expanded="false" aria-controls="cw2">
+              JavaScript Programming &amp; Interactive Applications
+            </button>
+          </h3>
+          <div id="cw2" class="accordion-collapse collapse" data-bs-parent="#courseworkAccordion">
+            <div class="accordion-body">
+              <p class="text-muted-2">Explored the fundamentals of the DOM, events, and asynchronous programming by building interactive applications that consume public APIs.</p>
+              <p class="fw-semibold mb-1">Key accomplishments</p>
+              <ul class="text-muted-2">
+                <li>Developed a weather dashboard that fetches and caches live API data.</li>
+                <li>Wrote modular, testable ES6 code with clear separation of concerns.</li>
+              </ul>
+              <div class="d-flex gap-3">
+                <a href="#" class="btn btn-sm btn-accent"><i class="bi bi-box-arrow-up-right me-1"></i>Live Demo</a>
+                <a href="#" class="btn btn-sm btn-outline-dark"><i class="bi bi-github me-1"></i>Repository</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cw3" aria-expanded="false" aria-controls="cw3">
+              Database Design &amp; SQL Fundamentals
+            </button>
+          </h3>
+          <div id="cw3" class="accordion-collapse collapse" data-bs-parent="#courseworkAccordion">
+            <div class="accordion-body">
+              <p class="text-muted-2">Designed relational schemas and wrote optimized queries to power data-driven applications, connecting back-end data to front-end interfaces.</p>
+              <p class="fw-semibold mb-1">Key accomplishments</p>
+              <ul class="text-muted-2">
+                <li>Modeled a normalized database for an inventory management system.</li>
+                <li>Authored complex JOIN and aggregate queries for reporting dashboards.</li>
+              </ul>
+              <div class="d-flex gap-3">
+                <a href="#" class="btn btn-sm btn-accent"><i class="bi bi-box-arrow-up-right me-1"></i>Live Demo</a>
+                <a href="#" class="btn btn-sm btn-outline-dark"><i class="bi bi-github me-1"></i>Repository</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PORTFOLIO ================= -->
+  <section id="portfolio" class="section section-alt">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section-eyebrow">Portfolio</p>
+        <h2 class="section-title">Featured projects</h2>
+        <p class="text-muted-2 mx-auto" style="max-width: 620px;">A selection of projects that showcase my approach to problem-solving and clean, user-focused design.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4">
+          <article class="project-card h-100">
+            <div class="project-img-wrap">
+              <img src="images/project-1.png" alt="Screenshot of the TaskFlow task management app" class="project-img" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">TaskFlow &mdash; Task Manager</h3>
+              <p class="text-muted-2">A clean, drag-and-drop task board that helps users organize daily work into intuitive lists and cards.</p>
+              <div class="tech-tags mb-3">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+              <p class="challenge-note"><i class="bi bi-lightbulb me-1 text-accent"></i><strong>Challenge:</strong> Persisting state across sessions &mdash; solved with a lightweight local storage layer.</p>
+              <div class="d-flex gap-3 mt-3">
+                <a href="#" class="btn btn-sm btn-accent"><i class="bi bi-box-arrow-up-right me-1"></i>Live Demo</a>
+                <a href="#" class="btn btn-sm btn-outline-dark"><i class="bi bi-github me-1"></i>GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4">
+          <article class="project-card h-100">
+            <div class="project-img-wrap">
+              <img src="images/project-2.png" alt="Screenshot of the Marketplace e-commerce storefront" class="project-img" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Marketplace &mdash; Storefront</h3>
+              <p class="text-muted-2">A responsive e-commerce front-end with a product grid, filtering, and a persistent shopping cart experience.</p>
+              <div class="tech-tags mb-3">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+              <p class="challenge-note"><i class="bi bi-lightbulb me-1 text-accent"></i><strong>Challenge:</strong> Keeping the layout balanced across breakpoints &mdash; solved with the Bootstrap grid and utility classes.</p>
+              <div class="d-flex gap-3 mt-3">
+                <a href="#" class="btn btn-sm btn-accent"><i class="bi bi-box-arrow-up-right me-1"></i>Live Demo</a>
+                <a href="#" class="btn btn-sm btn-outline-dark"><i class="bi bi-github me-1"></i>GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4">
+          <article class="project-card h-100">
+            <div class="project-img-wrap">
+              <img src="images/project-3.png" alt="Screenshot of the Skycast weather forecast app" class="project-img" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Skycast &mdash; Weather App</h3>
+              <p class="text-muted-2">A friendly weather dashboard that displays current conditions and a multi-day forecast from a public API.</p>
+              <div class="tech-tags mb-3">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">CSS</span>
+              </div>
+              <p class="challenge-note"><i class="bi bi-lightbulb me-1 text-accent"></i><strong>Challenge:</strong> Handling API rate limits &mdash; solved by caching responses and debouncing search input.</p>
+              <div class="d-flex gap-3 mt-3">
+                <a href="#" class="btn btn-sm btn-accent"><i class="bi bi-box-arrow-up-right me-1"></i>Live Demo</a>
+                <a href="#" class="btn btn-sm btn-outline-dark"><i class="bi bi-github me-1"></i>GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section-eyebrow">Contact</p>
+        <h2 class="section-title">Let&apos;s work together</h2>
+        <p class="text-muted-2 mx-auto" style="max-width: 620px;">
+          I&apos;m always open to new opportunities and collaborations. Have a project in mind or just want to say hello?
+          Use the form below to reach out and I&apos;ll get back to you soon.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="panel">
+            <!-- JotForm embed placeholder -->
+            <blockquote class="jotform-placeholder">
+              <i class="bi bi-code-square d-block mb-2"></i>
+              [JotForm Embed Area: Paste your JotForm script here]
+            </blockquote>
+
+            <div class="text-center mt-4">
+              <p class="text-muted-2 mb-3">Or connect with me directly:</p>
+              <div class="d-flex justify-content-center gap-3">
+                <a href="#" class="btn btn-social" aria-label="LinkedIn Profile">
+                  <i class="bi bi-linkedin me-2"></i>LinkedIn
+                </a>
+                <a href="#" class="btn btn-social" aria-label="GitHub Profile">
+                  <i class="bi bi-github me-2"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <span>&copy; <span id="year"></span> Dylan Parisotto. Built with HTML, CSS &amp; Bootstrap 5.</span>
+      <div class="d-flex gap-3 footer-social">
+        <a href="#" aria-label="LinkedIn Profile"><i class="bi bi-linkedin"></i></a>
+        <a href="#" aria-label="GitHub Profile"><i class="bi bi-github"></i></a>
+        <a href="#home" aria-label="Back to top"><i class="bi bi-arrow-up-circle"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Add background to navbar on scroll
+    const nav = document.getElementById('mainNav');
+    const onScroll = () => nav.classList.toggle('nav-scrolled', window.scrollY > 40);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Close mobile menu after clicking a link
+    document.querySelectorAll('#navLinks .nav-link').forEach((link) => {
+      link.addEventListener('click', () => {
+        const collapse = bootstrap.Collapse.getInstance(document.getElementById('navLinks'));
+        if (collapse && window.innerWidth < 992) collapse.hide();
+      });
+    });
+  </script>
+</body>
+</html>

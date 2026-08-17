@@ -1,0 +1,15 @@
+{
+  "name": "web-dev-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "serve -l tcp://0.0.0.0:3000 --no-clipboard .",
+    "start": "serve -l tcp://0.0.0.0:3000 --no-clipboard ."
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.3"
+  }
+}
