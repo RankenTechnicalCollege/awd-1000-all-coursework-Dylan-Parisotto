@@ -125,9 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const allStudents = repository.getAllStudents();
         const filteredStudents = repository.findStudents((student) => {
             const name = `${student.firstName} ${student.lastName}`.toLowerCase();
-            const bioMatch = student.bio.toLowerCase();
-            const skillMatch = student.skills.join(" ").toLowerCase();
-            const matchesTerm = term === "" || name.includes(term) || bioMatch.includes(term) || skillMatch.includes(term);
+            const matchesTerm = term === "" || name.includes(term);
             const matchesProgram = selectedProgram === "all" || student.program === selectedProgram;
             return matchesTerm && matchesProgram;
         });
