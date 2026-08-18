@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Student Directory | Web Technologies Final</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body class="bg-slate-100 text-slate-900">
+		<header class="hero">
+			<div class="hero-inner">
+				<p class="eyebrow">Web Technologies Final Project</p>
+				<h1>Student Directory</h1>
+				<p class="subtitle">
+					Browse, search, filter, add, and remove students in a responsive single-page app.
+				</p>
+			</div>
+		</header>
+
+		<main class="page-shell">
+			<section class="panel controls" aria-labelledby="controls-title">
+				<h2 id="controls-title">Find Students</h2>
+				<div class="control-grid">
+					<div>
+						<label for="search">Live Search</label>
+						<input
+							id="search"
+							name="search"
+							type="search"
+							placeholder="Search name, bio, or skills"
+							autocomplete="off"
+							class="w-full"
+						/>
+					</div>
+					<div>
+						<label for="filter-program">Program Filter</label>
+						<select id="filter-program" name="filter-program" class="w-full"></select>
+					</div>
+				</div>
+				<output id="results-count" aria-live="polite">Showing 0 of 0 students</output>
+			</section>
+
+			<section class="panel form-panel" aria-labelledby="form-title">
+				<h2 id="form-title">Add Student</h2>
+				<form id="student-form" novalidate>
+					<fieldset>
+						<legend>Personal Info</legend>
+						<div class="field-grid">
+							<div>
+								<label for="first-name">First Name</label>
+								<input id="first-name" name="first-name" type="text" required />
+							</div>
+							<div>
+								<label for="last-name">Last Name</label>
+								<input id="last-name" name="last-name" type="text" required />
+							</div>
+							<div>
+								<label for="email">Email</label>
+								<input id="email" name="email" type="email" placeholder="name@school.edu" />
+							</div>
+							<div>
+								<label for="photo-url">Photo URL (optional)</label>
+								<input id="photo-url" name="photo-url" type="url" placeholder="https://..." />
+							</div>
+						</div>
+					</fieldset>
+
+					<fieldset>
+						<legend>Academic Info</legend>
+						<div class="field-grid">
+							<div>
+								<label for="program">Program</label>
+								<select id="program" name="program"></select>
+							</div>
+							<div>
+								<label for="class-year">Class Year</label>
+								<select id="class-year" name="class-year"></select>
+							</div>
+							<div>
+								<label for="gpa">GPA (optional)</label>
+								<input id="gpa" name="gpa" type="number" min="0" max="4" step="0.01" />
+							</div>
+							<div>
+								<label for="skills">Skills (comma-separated)</label>
+								<input id="skills" name="skills" type="text" list="skill-options" />
+								<datalist id="skill-options"></datalist>
+							</div>
+						</div>
+					</fieldset>
+
+					<fieldset>
+						<legend>Bio</legend>
+						<label for="bio">Short Bio</label>
+						<textarea id="bio" name="bio" rows="4" maxlength="280"></textarea>
+						<output id="bio-count" for="bio" aria-live="polite">0 / 280 characters</output>
+					</fieldset>
+
+					<p id="form-error" role="alert" aria-live="polite"></p>
+
+					<div class="button-row">
+						<button id="save-btn" type="submit">Save Student</button>
+						<button id="reset-btn" type="reset">Reset Form</button>
+					</div>
+				</form>
+			</section>
+
+			<section class="panel" aria-labelledby="directory-title">
+				<h2 id="directory-title">Directory</h2>
+				<section id="directory" class="directory-grid" aria-live="polite">
+					<p class="loading-state">Loading students...</p>
+				</section>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<p>Built with vanilla TypeScript, semantic HTML, and CSS + Tailwind utilities.</p>
+		</footer>
+
+		<script src="dist/types.js" defer></script>
+		<script src="dist/data.js" defer></script>
+		<script src="dist/render.js" defer></script>
+		<script src="dist/app.js" defer></script>
+	</body>
+</html>
